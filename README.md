@@ -760,7 +760,7 @@ No se utilizarán estas prácticas contra sistemas, aplicaciones, redes o infrae
 
 # 📌 Estado actual
 
-**Etapa:** 0.1 — Diseño del repositorio
+**Etapa:** 0.2 — Git Workflow profesional
 
 **Estado:**
 
@@ -771,8 +771,9 @@ No se utilizarán estas prácticas contra sistemas, aplicaciones, redes o infrae
 - [x] Inicializar Git
 - [x] Configurar rama `main`
 - [x] Configurar identidad Git
-- [ ] Primer commit
-- [ ] Conectar con GitHub
+- [x] Primer commit
+- [x] Conectar con GitHub
+- [x] Crear rama de trabajo
 - [ ] Comenzar desarrollo de la API
 
 ---
