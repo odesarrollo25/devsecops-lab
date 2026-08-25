@@ -1,10 +1,64 @@
-.venv/
+# ==============================
+# Python
+# ==============================
+
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+
+
+# ==============================
+# Virtual environments
+# ==============================
+
+.venv/
+venv/
+env/
+ENV/
+
+
+# ==============================
+# Environment variables / Secrets
+# ==============================
 
 .env
 .env.*
+!.env.example
+
+
+# ==============================
+# Testing / Coverage
+# ==============================
 
 .pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+
+# ==============================
+# IDE / Editors
+# ==============================
 
 .vscode/
+.idea/
+
+
+# ==============================
+# Build / Packaging
+# ==============================
+
+build/
+dist/
+*.egg-info/
+.eggs/
+
+
+# ==============================
+# OS generated files
+# ==============================
+
+.DS_Store
+Thumbs.db
