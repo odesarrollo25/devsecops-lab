@@ -1,10 +1,13 @@
-def get_app_info():
+from fastapi import FastAPI
+
+
+app = FastAPI(title="DevSecOps Task API")
+
+
+@app.get("/")
+def root():
     return {
-        "name": "DevSecOps Lab",
-        "version": "0.1.0",
+        "name": "DevSecOps Task API",
+        "version": "0.2.0",
         "status": "running",
     }
-
-
-if __name__ == "__main__":
-    print(get_app_info())
