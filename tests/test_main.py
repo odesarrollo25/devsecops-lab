@@ -1,9 +1,17 @@
-from app.main import get_app_info
+from fastapi.testclient import TestClient
+
+from app.main import app
 
 
-def test_get_app_info():
-    info = get_app_info()
+client = TestClient(app)
 
-    assert info["name"] == "DevSecOps Lab"
-    assert info["version"] == "0.1.0"
-    assert info["status"] == "running"
+
+def test_root():
+    response = client.get("/")
+
+    assert response.status_code == 200
+    assert response.json() == {
+        "name": "DevSecOps Task API",
+        "version": "0.2.0",
+        "status": "running",
+    }
